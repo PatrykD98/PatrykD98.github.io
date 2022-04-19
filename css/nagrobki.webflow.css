@@ -1369,12 +1369,14 @@ figcaption {
 
 .body {
   background-image: url('../images/marmurLessBlured.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 50% 50%;
+  background-size: auto;
   background-repeat: repeat;
   background-attachment: fixed;
   -webkit-filter: blur(0px);
   filter: blur(0px);
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
   mix-blend-mode: normal;
 }
 
@@ -2156,6 +2158,11 @@ figcaption {
     padding: 25px 30px;
   }
 
+  .list-item-own {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .navigation-wrap-myown-v2 {
     background-color: transparent;
   }
@@ -2359,6 +2366,10 @@ figcaption {
 
   .navigation-myown {
     padding: 20px 30px;
+  }
+
+  .list {
+    text-align: left;
   }
 
   .sectiongaleriabezcms {
@@ -2628,6 +2639,11 @@ figcaption {
   .navigation-myown {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .list {
+    text-align: left;
+    list-style-type: disc;
   }
 
   .list-item-own {
