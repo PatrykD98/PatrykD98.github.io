@@ -2445,8 +2445,24 @@ figcaption {
   }
 
   .heading-jumbo {
-    display: block;
-    margin: 0px auto 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 26px;
     line-height: 48px;
     font-style: normal;
@@ -2455,14 +2471,15 @@ figcaption {
   }
 
   .heading-jumbo.heading-jumbo-home {
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .heading-jumbo-small {
     margin-bottom: 29px;
     padding-bottom: 25px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .menu-myown {
@@ -2496,6 +2513,11 @@ figcaption {
   .intro-header {
     height: 150px;
     margin-bottom: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -2588,6 +2610,31 @@ figcaption {
 
   .about-grid.cc-about-2 {
     margin-top: -8px;
+  }
+
+  .intro-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .body {
+    background-attachment: fixed;
   }
 
   .imagesgridv2 {
