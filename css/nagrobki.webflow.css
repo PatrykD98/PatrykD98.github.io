@@ -558,7 +558,7 @@ figcaption {
 }
 
 .logo-image {
-  display: block;
+  display: none;
   margin-bottom: 0px;
 }
 
@@ -1683,6 +1683,7 @@ figcaption {
 }
 
 .brand.w--current {
+  display: block;
   max-width: 190px;
 }
 
