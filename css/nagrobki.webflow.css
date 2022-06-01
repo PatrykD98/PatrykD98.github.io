@@ -1369,12 +1369,14 @@ figcaption {
 
 .body {
   background-image: url('../images/marmurLessBlured.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-position: 50% 50%;
+  background-size: auto;
   background-repeat: repeat;
   background-attachment: fixed;
   -webkit-filter: blur(0px);
   filter: blur(0px);
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
   mix-blend-mode: normal;
 }
 
@@ -1681,6 +1683,7 @@ figcaption {
 }
 
 .brand.w--current {
+  display: block;
   max-width: 190px;
 }
 
@@ -2156,6 +2159,11 @@ figcaption {
     padding: 25px 30px;
   }
 
+  .list-item-own {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .navigation-wrap-myown-v2 {
     background-color: transparent;
   }
@@ -2361,6 +2369,10 @@ figcaption {
     padding: 20px 30px;
   }
 
+  .list {
+    text-align: left;
+  }
+
   .sectiongaleriabezcms {
     margin-right: 15px;
     margin-left: 15px;
@@ -2434,8 +2446,24 @@ figcaption {
   }
 
   .heading-jumbo {
-    display: block;
-    margin: 0px auto 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     font-size: 26px;
     line-height: 48px;
     font-style: normal;
@@ -2444,14 +2472,15 @@ figcaption {
   }
 
   .heading-jumbo.heading-jumbo-home {
-    margin-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .heading-jumbo-small {
     margin-bottom: 29px;
     padding-bottom: 25px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .menu-myown {
@@ -2485,6 +2514,11 @@ figcaption {
   .intro-header {
     height: 150px;
     margin-bottom: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -2579,6 +2613,31 @@ figcaption {
     margin-top: -8px;
   }
 
+  .intro-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .body {
+    background-attachment: fixed;
+  }
+
   .imagesgridv2 {
     line-height: 25px;
     -webkit-column-count: 2;
@@ -2628,6 +2687,11 @@ figcaption {
   .navigation-myown {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .list {
+    text-align: left;
+    list-style-type: disc;
   }
 
   .list-item-own {
